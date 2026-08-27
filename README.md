@@ -1,8 +1,10 @@
 # ScriptSenseAI — AI Assessment Extraction & Answer Mapping Platform
 
+[![Live Demo](https://img.shields.io/badge/Live_Demo-script--sense--ai.vercel.app-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://script-sense-ai.vercel.app/)
 [![GitHub Repository](https://img.shields.io/badge/GitHub-Reethikaa05%2FScriptSenseAI-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Reethikaa05/ScriptSenseAI)
 
 <p align="left">
+  <a href="https://script-sense-ai.vercel.app/"><img src="https://img.shields.io/badge/Vercel-Deployment_Active-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Vercel Deployment" /></a>
   <a href="https://nextjs.org/"><img src="https://img.shields.io/badge/Next.js-14.2-black?style=for-the-badge&logo=next.js&logoColor=white" alt="Next.js 14" /></a>
   <a href="https://www.typescriptlang.org/"><img src="https://img.shields.io/badge/TypeScript-5.0-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" /></a>
   <a href="https://tailwindcss.com/"><img src="https://img.shields.io/badge/Tailwind_CSS-3.4-38BDF8?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS" /></a>
@@ -13,7 +15,8 @@
 
 **ScriptSenseAI** is an AI-powered handwritten answer evaluation platform designed for educators to upload **question papers** and **handwritten student answer sheets**. Powered by **Anthropic Claude 3.5 Vision AI**, the platform automatically extracts questions, transcribes handwritten answers (even out of sequence), maps answer regions with coordinate bounding boxes, draws interactive highlight annotations, and generates holistic grading analytics.
 
-Official Repository: [https://github.com/Reethikaa05/ScriptSenseAI](https://github.com/Reethikaa05/ScriptSenseAI)
+- 🌐 **Live Website**: [https://script-sense-ai.vercel.app/](https://script-sense-ai.vercel.app/)
+- ⭐ **Official Repository**: [https://github.com/Reethikaa05/ScriptSenseAI](https://github.com/Reethikaa05/ScriptSenseAI)
 
 ---
 

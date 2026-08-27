@@ -1,6 +1,11 @@
 {
-  "name": "veda-ai-assessment",
+  "name": "scriptsense-ai",
   "version": "1.0.0",
+  "homepage": "https://script-sense-ai.vercel.app/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Reethikaa05/ScriptSenseAI.git"
+  },
   "private": true,
   "scripts": {
     "dev": "next dev",

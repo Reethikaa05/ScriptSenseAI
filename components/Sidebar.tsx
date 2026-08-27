@@ -115,7 +115,21 @@ export default function Sidebar({
           {!collapsed && <span>Settings</span>}
         </button>
 
-        {/* GitHub Repository Link */}
+        {/* Live Vercel App Link */}
+        <a
+          href="https://script-sense-ai.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={`flex items-center gap-3 px-3 py-2 rounded-xl text-xs font-sans text-white bg-gradient-to-r from-orange-600 to-amber-600 hover:from-orange-700 hover:to-amber-700 shadow-sm transition-all ${
+            collapsed ? "justify-center px-0" : ""
+          }`}
+          title="Live ScriptSenseAI App on Vercel"
+        >
+          <span className="text-sm">🌐</span>
+          {!collapsed && <span className="font-bold">Live App</span>}
+        </a>
+
+        {/* ScriptSenseAI GitHub Repo Link */}
         <a
           href="https://github.com/Reethikaa05/ScriptSenseAI"
           target="_blank"
