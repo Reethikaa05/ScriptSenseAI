@@ -39,66 +39,73 @@ export const sampleAnswerSheetPage: PageImage = {
     <rect width="800" height="1050" fill="%23FAFAF7"/>
     <line x1="80" y1="0" x2="80" y2="1050" stroke="%23EF4444" stroke-width="1.5" opacity="0.6"/>
     <!-- Blue Notebook Horizontal Lines -->
-    <line x1="0" y1="80" x2="800" y2="80" stroke="%2393C5FD" stroke-width="1" opacity="0.4"/>
-    <line x1="0" y1="140" x2="800" y2="140" stroke="%2393C5FD" stroke-width="1" opacity="0.4"/>
-    <line x1="0" y1="200" x2="800" y2="200" stroke="%2393C5FD" stroke-width="1" opacity="0.4"/>
-    <line x1="0" y1="260" x2="800" y2="260" stroke="%2393C5FD" stroke-width="1" opacity="0.4"/>
-    <line x1="0" y1="320" x2="800" y2="320" stroke="%2393C5FD" stroke-width="1" opacity="0.4"/>
-    <line x1="0" y1="380" x2="800" y2="380" stroke="%2393C5FD" stroke-width="1" opacity="0.4"/>
-    <line x1="0" y1="440" x2="800" y2="440" stroke="%2393C5FD" stroke-width="1" opacity="0.4"/>
-    <line x1="0" y1="500" x2="800" y2="500" stroke="%2393C5FD" stroke-width="1" opacity="0.4"/>
-    <line x1="0" y1="560" x2="800" y2="560" stroke="%2393C5FD" stroke-width="1" opacity="0.4"/>
-    <line x1="0" y1="620" x2="800" y2="620" stroke="%2393C5FD" stroke-width="1" opacity="0.4"/>
-    <line x1="0" y1="680" x2="800" y2="680" stroke="%2393C5FD" stroke-width="1" opacity="0.4"/>
-    <line x1="0" y1="740" x2="800" y2="740" stroke="%2393C5FD" stroke-width="1" opacity="0.4"/>
-    <line x1="0" y1="800" x2="800" y2="800" stroke="%2393C5FD" stroke-width="1" opacity="0.4"/>
-    <line x1="0" y1="860" x2="800" y2="860" stroke="%2393C5FD" stroke-width="1" opacity="0.4"/>
-    <line x1="0" y1="920" x2="800" y2="920" stroke="%2393C5FD" stroke-width="1" opacity="0.4"/>
+    <line x1="0" y1="70" x2="800" y2="70" stroke="%2393C5FD" stroke-width="1" opacity="0.4"/>
+    <line x1="0" y1="130" x2="800" y2="130" stroke="%2393C5FD" stroke-width="1" opacity="0.4"/>
+    <line x1="0" y1="190" x2="800" y2="190" stroke="%2393C5FD" stroke-width="1" opacity="0.4"/>
+    <line x1="0" y1="250" x2="800" y2="250" stroke="%2393C5FD" stroke-width="1" opacity="0.4"/>
+    <line x1="0" y1="310" x2="800" y2="310" stroke="%2393C5FD" stroke-width="1" opacity="0.4"/>
+    <line x1="0" y1="370" x2="800" y2="370" stroke="%2393C5FD" stroke-width="1" opacity="0.4"/>
+    <line x1="0" y1="430" x2="800" y2="430" stroke="%2393C5FD" stroke-width="1" opacity="0.4"/>
+    <line x1="0" y1="490" x2="800" y2="490" stroke="%2393C5FD" stroke-width="1" opacity="0.4"/>
+    <line x1="0" y1="550" x2="800" y2="550" stroke="%2393C5FD" stroke-width="1" opacity="0.4"/>
+    <line x1="0" y1="610" x2="800" y2="610" stroke="%2393C5FD" stroke-width="1" opacity="0.4"/>
+    <line x1="0" y1="670" x2="800" y2="670" stroke="%2393C5FD" stroke-width="1" opacity="0.4"/>
+    <line x1="0" y1="730" x2="800" y2="730" stroke="%2393C5FD" stroke-width="1" opacity="0.4"/>
+    <line x1="0" y1="790" x2="800" y2="790" stroke="%2393C5FD" stroke-width="1" opacity="0.4"/>
+    <line x1="0" y1="850" x2="800" y2="850" stroke="%2393C5FD" stroke-width="1" opacity="0.4"/>
+    <line x1="0" y1="910" x2="800" y2="910" stroke="%2393C5FD" stroke-width="1" opacity="0.4"/>
+    <line x1="0" y1="970" x2="800" y2="970" stroke="%2393C5FD" stroke-width="1" opacity="0.4"/>
 
-    <!-- Q1 Handwriting Text -->
-    <text x="25" y="115" font-family="cursive, Georgia, sans-serif" font-size="18" font-weight="bold" fill="%231E3A8A">Q1.</text>
-    <text x="100" y="115" font-family="cursive, Georgia, sans-serif" font-size="16" fill="%231E3A8A">Photosynthesis is the process used by green plants and some other</text>
-    <text x="100" y="150" font-family="cursive, Georgia, sans-serif" font-size="16" fill="%231E3A8A">organisms to convert light energy into chemical energy.</text>
+    <!-- Q1 Answer (Correct - Green Checkmark) -->
+    <text x="25" y="95" font-family="cursive, Georgia, sans-serif" font-size="18" font-weight="bold" fill="%231E3A8A">Q1.</text>
+    <text x="100" y="95" font-family="cursive, Georgia, sans-serif" font-size="16" fill="%231E3A8A">Arteries carry oxygenated blood away from the heart to body tissues.</text>
+    <text x="730" y="95" font-family="sans-serif" font-size="20" font-weight="bold" fill="%2316A34A">✓ [2/2]</text>
 
-    <!-- Chemical Equation Box -->
-    <rect x="110" y="175" width="560" height="40" fill="none" stroke="%231E3A8A" stroke-width="1.5"/>
-    <text x="130" y="200" font-family="cursive, Georgia, sans-serif" font-size="15" font-weight="bold" fill="%231E3A8A">6CO₂  +  6H₂O   ---(Light / Chlorophyll)--->   C₆H₁₂O₆  +  6O₂</text>
+    <!-- Q3 Answer: Chemical Equation & Plant Diagram -->
+    <g transform="translate(0, 120)">
+      <text x="25" y="45" font-family="cursive, Georgia, sans-serif" font-size="18" font-weight="bold" fill="%231E3A8A">Q3.</text>
+      <text x="100" y="45" font-family="cursive, Georgia, sans-serif" font-size="15" fill="%231E3A8A">Photosynthesis converts light energy into chemical energy in green plants.</text>
+      <rect x="100" y="60" width="560" height="35" fill="none" stroke="%231E3A8A" stroke-width="1.5"/>
+      <text x="115" y="82" font-family="cursive, Georgia, sans-serif" font-size="14" font-weight="bold" fill="%231E3A8A">6CO₂ + 6H₂O  ---(Sunlight / Chlorophyll)--->  C₆H₁₂O₆ + 6O₂</text>
+      <text x="730" y="45" font-family="sans-serif" font-size="20" font-weight="bold" fill="%2316A34A">✓ [2/2]</text>
+    </g>
 
-    <!-- Plant Diagram Sketch -->
-    <!-- Sun -->
-    <circle cx="500" cy="270" r="18" fill="none" stroke="%231E3A8A" stroke-width="1.5"/>
-    <line x1="500" y1="244" x2="500" y2="236" stroke="%231E3A8A" stroke-width="1.5"/>
-    <line x1="520" y1="250" x2="526" y2="244" stroke="%231E3A8A" stroke-width="1.5"/>
-    <line x1="526" y1="270" x2="534" y2="270" stroke="%231E3A8A" stroke-width="1.5"/>
-    <text x="536" y="275" font-family="cursive, Georgia, sans-serif" font-size="14" fill="%231E3A8A">Sunlight</text>
+    <!-- Q4 Answer: INCORRECT ANSWER (Highlighted Red) -->
+    <g transform="translate(0, 240)">
+      <text x="25" y="45" font-family="cursive, Georgia, sans-serif" font-size="18" font-weight="bold" fill="%23E11D48">Q4.</text>
+      <text x="100" y="45" font-family="cursive, Georgia, sans-serif" font-size="15" fill="%23E11D48" text-decoration="line-through">Blood enters the right atrium and flows directly into the aorta to body tissues.</text>
+      <!-- Red Cross Mark -->
+      <text x="730" y="45" font-family="sans-serif" font-size="20" font-weight="bold" fill="%23E11D48">✗ [0/2]</text>
+      <text x="100" y="70" font-family="sans-serif" font-size="12" font-weight="bold" fill="%23E11D48">[Teacher Note: Incorrect sequence! Blood must cross tricuspid valve to RV first.]</text>
+    </g>
 
-    <!-- Plant Stem & Leaves -->
-    <path d="M 450 430 Q 450 350 450 310" fill="none" stroke="%231E3A8A" stroke-width="2"/>
-    <!-- Leaves -->
-    <path d="M 450 360 Q 410 340 400 360 Q 420 380 450 360" fill="none" stroke="%231E3A8A" stroke-width="1.5"/>
-    <path d="M 450 340 Q 490 320 500 340 Q 480 360 450 340" fill="none" stroke="%231E3A8A" stroke-width="1.5"/>
-    <!-- Roots -->
-    <path d="M 450 430 L 430 470 M 450 430 L 450 480 M 450 430 L 470 465" stroke="%231E3A8A" stroke-width="1.5"/>
-    <line x1="380" y1="430" x2="520" y2="430" stroke="%231E3A8A" stroke-width="1" stroke-dasharray="3,3"/>
+    <!-- Q5 Answer: Alveolus Diagram -->
+    <g transform="translate(0, 330)">
+      <text x="25" y="45" font-family="cursive, Georgia, sans-serif" font-size="18" font-weight="bold" fill="%231E3A8A">Q5.</text>
+      <text x="100" y="45" font-family="cursive, Georgia, sans-serif" font-size="15" fill="%231E3A8A">Alveolus diagram showing capillary network &amp; gas exchange arrows (O₂ in, CO₂ out).</text>
+      <circle cx="500" cy="90" r="35" fill="none" stroke="%231E3A8A" stroke-width="2"/>
+      <path d="M 450 90 Q 500 130 550 90" fill="none" stroke="%231E3A8A" stroke-width="1.5" stroke-dasharray="3,3"/>
+      <text x="560" y="95" font-family="cursive, Georgia, sans-serif" font-size="13" fill="%231E3A8A">Capillary Network</text>
+      <text x="730" y="45" font-family="sans-serif" font-size="20" font-weight="bold" fill="%2316A34A">✓ [2/2]</text>
+    </g>
 
-    <!-- Diagram Labels & Arrows -->
-    <text x="260" y="360" font-family="cursive, Georgia, sans-serif" font-size="14" fill="%231E3A8A">Carbon dioxide</text>
-    <line x1="365" y1="355" x2="395" y2="355" stroke="%231E3A8A" stroke-width="1.5"/>
-    <polygon points="395,352 402,355 395,358" fill="%231E3A8A"/>
+    <!-- Q2 Answer: Chloroplast Stages -->
+    <g transform="translate(0, 480)">
+      <text x="25" y="45" font-family="cursive, Georgia, sans-serif" font-size="18" font-weight="bold" fill="%231E3A8A">Q2.</text>
+      <text x="100" y="45" font-family="cursive, Georgia, sans-serif" font-size="15" fill="%231E3A8A">Chloroplast contains thylakoids &amp; stroma for light and dark reactions.</text>
+      <text x="100" y="75" font-family="cursive, Georgia, sans-serif" font-size="15" fill="%231E3A8A">1. Light Reaction: Absorbs light energy via chlorophyll pigments.</text>
+      <text x="100" y="105" font-family="cursive, Georgia, sans-serif" font-size="15" fill="%231E3A8A">2. Dark Reaction (Calvin Cycle): Fixes CO₂ into glucose sugar.</text>
+      <text x="730" y="45" font-family="sans-serif" font-size="20" font-weight="bold" fill="%2316A34A">✓ [2/2]</text>
+    </g>
 
-    <text x="540" y="360" font-family="cursive, Georgia, sans-serif" font-size="14" fill="%231E3A8A">Oxygen</text>
-    <line x1="535" y1="355" x2="505" y2="355" stroke="%231E3A8A" stroke-width="1.5"/>
-    <polygon points="535,352 542,355 535,358" fill="%231E3A8A"/>
-
-    <text x="490" y="465" font-family="cursive, Georgia, sans-serif" font-size="14" fill="%231E3A8A">Water</text>
-
-    <!-- Q2 Handwriting Text -->
-    <g transform="translate(0, 500)">
-      <text x="25" y="60" font-family="cursive, Georgia, sans-serif" font-size="18" font-weight="bold" fill="%231E3A8A">Q2.</text>
-      <text x="100" y="60" font-family="cursive, Georgia, sans-serif" font-size="16" fill="%231E3A8A">The process mainly occurs in the chloroplast of the plant cell.</text>
-      <text x="100" y="95" font-family="cursive, Georgia, sans-serif" font-size="16" fill="%231E3A8A">It has two main stages:</text>
-      <text x="100" y="130" font-family="cursive, Georgia, sans-serif" font-size="16" fill="%231E3A8A">1. Light reaction — Captures light energy.</text>
-      <text x="100" y="165" font-family="cursive, Georgia, sans-serif" font-size="16" fill="%231E3A8A">2. Dark reaction — Uses energy to make glucose.</text>
+    <!-- Q6 Answer: Digestive System (Partial Credit - Amber) -->
+    <g transform="translate(0, 620)">
+      <text x="25" y="45" font-family="cursive, Georgia, sans-serif" font-size="18" font-weight="bold" fill="%23D97706">Q6.</text>
+      <text x="100" y="45" font-family="cursive, Georgia, sans-serif" font-size="15" fill="%231E3A8A">Digestive system sketch showing esophagus, stomach, small intestine, and large intestine.</text>
+      <path d="M 450 70 Q 470 110 440 150 Q 480 180 430 220" fill="none" stroke="%231E3A8A" stroke-width="2"/>
+      <text x="500" y="120" font-family="cursive, Georgia, sans-serif" font-size="13" fill="%231E3A8A">Stomach</text>
+      <text x="500" y="170" font-family="cursive, Georgia, sans-serif" font-size="13" fill="%231E3A8A">Small Intestine</text>
+      <text x="730" y="45" font-family="sans-serif" font-size="20" font-weight="bold" fill="%23D97706">! [4/5]</text>
     </g>
   </svg>`
 };
@@ -246,16 +253,17 @@ export const sampleProcessResult: ProcessResult = {
     },
     {
       questionId: "q4",
-      matched: false,
-      text: "",
+      matched: true,
+      text: "Blood enters the right atrium and flows directly into the aorta to body tissues.",
       page: 1,
-      boundingBox: null,
+      boundingBox: { x: 0.03, y: 0.23, width: 0.92, height: 0.08 },
       marksAwarded: 0,
       maxMarks: 2,
       correctness: "incorrect",
-      feedback: "This question was left unanswered on the answer sheet.",
-      transcriptionConfidence: 0,
-      conceptsIdentified: []
+      feedback: "Incorrect sequence! Blood must flow from the right atrium across the tricuspid valve into the right ventricle before entering pulmonary circulation.",
+      transcriptionConfidence: 95,
+      conceptsIdentified: ["Circulatory System", "Heart Flow"],
+      improvements: "Review heart valve order (Right Atrium -> Tricuspid Valve -> Right Ventricle -> Pulmonary Artery)."
     },
     {
       questionId: "q5",

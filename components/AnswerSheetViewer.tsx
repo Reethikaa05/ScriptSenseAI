@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import type { BoundingBox, PageImage } from "@/lib/types";
+import type { BoundingBox, Correctness, PageImage } from "@/lib/types";
 
 type Props = {
   pages: PageImage[];
@@ -10,6 +10,7 @@ type Props = {
   onPageChange: (page: number) => void;
   highlightBox: BoundingBox | null;
   highlightKey: string;
+  correctness?: Correctness;
 };
 
 export default function AnswerSheetViewer({
@@ -17,7 +18,8 @@ export default function AnswerSheetViewer({
   activePage,
   onPageChange,
   highlightBox,
-  highlightKey
+  highlightKey,
+  correctness = "correct"
 }: Props) {
   const page = pages.find((p) => p.page === activePage) || pages[0];
   const [renderKey, setRenderKey] = useState(0);
@@ -38,7 +40,26 @@ export default function AnswerSheetViewer({
         });
       }, 100);
     }
-  }, [highlightKey, activePage, highlightBox]);
+  }, [highlightBox, highlightKey, activePage]);
+
+  const isIncorrect = correctness === "incorrect";
+  const isPartial = correctness === "partial";
+
+  const strokeColor = isIncorrect ? "#E11D48" : isPartial ? "#D97706" : "#16A34A";
+  const fillColor = isIncorrect ? "rgba(225,29,72,0.18)" : isPartial ? "rgba(217,119,6,0.18)" : "rgba(34,197,94,0.18)";
+  const shadowClass = isIncorrect
+    ? "shadow-[0_0_30px_rgba(225,29,72,0.45)]"
+    : isPartial
+    ? "shadow-[0_0_30px_rgba(217,119,6,0.45)]"
+    : "shadow-[0_0_30px_rgba(34,197,94,0.45)]";
+
+  const pillClass = isIncorrect
+    ? "bg-rose-600 text-white border-rose-400"
+    : isPartial
+    ? "bg-amber-600 text-white border-amber-400"
+    : "bg-emerald-600 text-white border-emerald-400";
+
+  const statusSymbol = isIncorrect ? "✗ Incorrect" : isPartial ? "! Partial" : "✓ Correct";
 
   if (!page) return null;
 
@@ -149,7 +170,7 @@ export default function AnswerSheetViewer({
                 <motion.div
                   ref={highlightRef}
                   key={renderKey}
-                  className="absolute pointer-events-none z-10 shadow-[0_0_25px_rgba(34,197,94,0.35)] rounded-2xl"
+                  className={`absolute pointer-events-none z-10 rounded-2xl ${shadowClass}`}
                   style={{
                     left: `${highlightBox.x * 100}%`,
                     top: `${highlightBox.y * 100}%`,
@@ -166,19 +187,19 @@ export default function AnswerSheetViewer({
                     preserveAspectRatio="none"
                     className="absolute -inset-[3%] w-[106%] h-[106%] overflow-visible"
                   >
-                    {/* Neat green background highlight */}
+                    {/* Background highlight glow */}
                     <motion.rect
                       x="2"
                       y="2"
                       width="96"
                       height="96"
                       rx="8"
-                      fill="rgba(34,197,94,0.15)"
+                      fill={fillColor}
                       animate={{ opacity: [0.15, 0.25, 0.15] }}
                       transition={{ duration: 2, repeat: Infinity }}
                     />
 
-                    {/* Neat green stroke border matching Figma Image 4 */}
+                    {/* Dynamic stroke border (Red for Incorrect, Amber for Partial, Green for Correct) */}
                     <motion.rect
                       x="2"
                       y="2"
@@ -186,8 +207,8 @@ export default function AnswerSheetViewer({
                       height="96"
                       rx="8"
                       fill="none"
-                      stroke="#16A34A"
-                      strokeWidth="3"
+                      stroke={strokeColor}
+                      strokeWidth="3.5"
                       vectorEffect="non-scaling-stroke"
                       strokeDasharray="400"
                       initial={{ strokeDashoffset: 400 }}
@@ -196,14 +217,15 @@ export default function AnswerSheetViewer({
                     />
                   </svg>
 
-                  {/* Dynamic Green Badge Pill Pinned at Top-Left */}
+                  {/* Dynamic Color Badge Pill Pinned at Top-Left */}
                   <motion.div
                     initial={{ opacity: 0, scale: 0.4, y: -4 }}
                     animate={{ opacity: 1, scale: 1, y: 0 }}
                     transition={{ delay: 0.2, duration: 0.25 }}
-                    className="absolute -top-4 left-3 bg-emerald-600 text-white font-mono font-extrabold text-xs px-3 py-0.5 rounded-md shadow-lg flex items-center gap-1 border border-emerald-400 z-20"
+                    className={`absolute -top-4 left-3 font-mono font-extrabold text-xs px-3 py-0.5 rounded-md shadow-lg flex items-center gap-1.5 border z-20 ${pillClass}`}
                   >
                     <span>[{highlightKey ? `Q${highlightKey}` : "Q2"}]</span>
+                    <span className="text-[10px] opacity-90">{statusSymbol}</span>
                   </motion.div>
                 </motion.div>
               )}

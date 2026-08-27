@@ -220,7 +220,8 @@ export default function ResultsView({
               activePage={activePage}
               onPageChange={(p) => setManualPage(p)}
               highlightBox={selectedAnswer?.matched ? selectedAnswer.boundingBox : null}
-              highlightKey={selectedId + String(activePage)}
+              highlightKey={selectedQuestion ? selectedQuestion.number : "2"}
+              correctness={selectedAnswer?.correctness}
             />
           </div>
 
