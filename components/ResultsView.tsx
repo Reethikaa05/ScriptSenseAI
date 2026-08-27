@@ -34,6 +34,7 @@ export default function ResultsView({
   const [filterStatus, setFilterStatus] = useState<FilterStatus>("all");
   const [searchQuery, setSearchQuery] = useState("");
 
+  const selectedQuestion = questions.find((q) => q.id === selectedId);
   const selectedAnswer = selectedId ? answerByQuestion.get(selectedId) : undefined;
   const [manualPage, setManualPage] = useState<number | null>(null);
   const activePage = manualPage ?? selectedAnswer?.page ?? 1;
