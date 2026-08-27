@@ -214,6 +214,44 @@ Open **[http://localhost:3000](http://localhost:3000)** in your browser.
 
 ---
 
+## 🚀 Deployment Guide
+
+### Option 1: Deploy to Vercel (Recommended · 1-Click Deployment)
+
+Vercel is the creator of Next.js and provides zero-config deployment:
+
+1. **Push to GitHub**: Make sure your repo is pushed to GitHub (`https://github.com/Reethikaa05/ScriptSenseAI`).
+2. **Import Project to Vercel**:
+   - Go to [https://vercel.com/new](https://vercel.com/new).
+   - Connect your GitHub account and select **`Reethikaa05/ScriptSenseAI`**.
+3. **Configure Environment Variables**:
+   - Under **Environment Variables**, add:
+     - `ANTHROPIC_API_KEY` = `sk-ant-api03-xxxx...` (Your Anthropic Claude API Key)
+     - `CLAUDE_MODEL` = `claude-3-5-sonnet-20241022`
+4. **Deploy**:
+   - Click **Deploy**. Vercel will automatically build and publish your Next.js app in ~60 seconds!
+
+---
+
+### Option 2: Deploy to Render (Node.js Web Service)
+
+Render provides free Node.js hosting:
+
+1. **Create Web Service**:
+   - Log in to [https://dashboard.render.com/](https://dashboard.render.com/).
+   - Click **New +** $\rightarrow$ **Web Service** $\rightarrow$ Connect GitHub $\rightarrow$ select **`Reethikaa05/ScriptSenseAI`**.
+2. **Configure Settings**:
+   - **Environment**: `Node`
+   - **Build Command**: `npm install && npm run build`
+   - **Start Command**: `npm run start`
+3. **Environment Variables**:
+   - Add `ANTHROPIC_API_KEY` = `sk-ant-api03-xxxx...`
+   - Add `CLAUDE_MODEL` = `claude-3-5-sonnet-20241022`
+4. **Deploy**:
+   - Click **Create Web Service**.
+
+---
+
 ## 🔒 Security & Privacy
 
 - **100% In-Memory Architecture**: Files are processed strictly in-memory per API request. No uploaded PDFs or student answer sheets are saved to disk or permanent databases.
